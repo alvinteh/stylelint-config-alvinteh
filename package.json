@@ -1,0 +1,20 @@
+{
+  "name": "stylelint-config-alvinteh",
+  "version": "0.1.0",
+  "author": "Alvin Teh <i@alvinteh.me>",
+  "description": "stylelint config",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvinteh/stylelint-config-alvinteh"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "css",
+    "sass"
+  ],
+  "peerDependencies": {
+    "stylelint": "^7.1.0"
+  }
+}
