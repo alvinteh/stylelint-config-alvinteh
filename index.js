@@ -14,10 +14,10 @@ module.exports = {
     'function-linear-gradient-no-nonstandard-direction': true,
     'function-parentheses-newline-inside': 'never-multi-line',
     'function-parentheses-space-inside': 'never',
-    'function-url-quotes': 'never',
+    'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
 
-    'number-leading-zero': 'never',
+    'number-leading-zero': 'always',
     'number-max-precision': 2,
     'number-no-trailing-zeros': true,
 
@@ -30,7 +30,7 @@ module.exports = {
 
     'unit-case': 'lower',
     'unit-no-unknown': true,
-    'unit-whitelist': ['%', 'deg', 'em', 'rem', 'px', 'vh', 'vw'],
+    'unit-whitelist': ['%', 'deg', 'em', 'ms', 'rem', 'px', 's', 'vh', 'vw'],
 
     'value-keyword-case': 'lower',
     'value-no-vendor-prefix': true,
@@ -53,7 +53,6 @@ module.exports = {
 
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    'declaration-colon-newline-after': 'never',
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-empty-line-before': 'never',
@@ -101,22 +100,18 @@ module.exports = {
     ],
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-block-semicolon-newline-before': 'never-multi-line',
-    'declaration-block-semicolon-space-after': 'never',
-    'declaration-block-semicolon-space-before': 'never',
+    'declaration-block-semicolon-space-after': 'always-single-line',
+    'declaration-block-semicolon-space-before': 'always-single-line',
     'declaration-block-single-line-max-declarations': 1,
     'declaration-block-trailing-semicolon': 'always',
 
-    'block-closing-brace-empty-line-before': 'always-multi-line',
+    'block-closing-brace-empty-line-before': 'never',
     'block-closing-brace-newline-after': 'always',
     'block-closing-brace-newline-before': 'always',
-    'block-closing-brace-space-after': 'never',
-    'block-closing-brace-space-before': 'never',
     'block-no-empty': true,
     'block-no-single-line': true,
     'block-opening-brace-newline-after': 'always',
-    'block-opening-brace-newline-before': 'always',
-    'block-opening-brace-space-after': 'never',
-    'block-opening-brace-space-before': 'never',
+    'block-opening-brace-space-before': 'always',
 
     'selector-max-compound-selectors': 3,
     'selector-max-specificity': '0,2,0',
@@ -132,13 +127,14 @@ module.exports = {
     'selector-pseudo-element-colon-notation': 'double',
     'selector-pseudo-element-no-unknown': true,
     'selector-root-no-composition': true,
-    'selector-type-case': true,
+    'selector-type-case': 'lower',
     'selector-type-no-unknown': true,
     'selector-max-empty-lines': 0,
 
     'selector-list-comma-newline-after': 'always',
-    'selector-list-comma-newline-before': 'never',
-    'selector-list-comma-space-after': 'never',
+    'selector-list-comma-newline-before': 'never-multi-line',
+    // Disabled due to false positives when using mixins
+    // 'selector-list-comma-space-after': 'always-single-line',
     'selector-list-comma-space-before': 'never',
 
     'rule-nested-empty-line-before': [
@@ -181,7 +177,7 @@ module.exports = {
     'comment-whitespace-inside': 'always',
 
     'indentation': 4,
-    'max-empty-lines': 0,
+    'max-empty-lines': 1,
     'max-line-length': 120,
     'max-nesting-depth': 3,
     'no-browser-hacks': true,
